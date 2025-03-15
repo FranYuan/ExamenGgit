@@ -12,17 +12,30 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     
     @GetMapping("/hello")
+<<<<<<< HEAD
         public String hello(){
             return "¡Hola!";
         } 
 
     @PostMapping("/build")
         public String build(){
+=======
+    public String sayHello(){
+        return "¡Hola!";
+    }
+
+    @PostMapping("/build")
+        public String sayBuild(){
+>>>>>>> develop
             return "¡Creado!";
         }
 
     @PutMapping("/update/{id}")
+<<<<<<< HEAD
         public String update(@PathVariable("id") String id){
+=======
+        public String sayUpdate(@PathVariable("id") String id){
+>>>>>>> develop
             return "¡Has actualizado: " + id + " !";
         }
 }
